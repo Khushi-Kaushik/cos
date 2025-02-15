@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #34495e;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  padding: 1rem 0;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link:hover,
+.nav-link.active-link {
+  color: white;
+}
+
+.animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+
+.start-home {
+  width: 100px;
+  left: 0;
+}
+
+.hover-sell {
+  width: 110px;
+  left: 100px;
+}
+
+.hover-sustainability {
+  width: 100px;
+  left: 210px;
+}
+
+.hover-community {
+  width: 160px;
+  left: 310px;
+}
+
+.hover-help {
+  width: 120px;
+  left: 470px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}
